@@ -3,7 +3,7 @@ vim.g.mapleader = " "
 vim.wo.number = true
 local opts = { noremap = true }
 
-vim.keymap.set('n', '<leader>ex', ':Explore<CR>')
+vim.keymap.set('n', '<leader>e', ':Explore<CR>')
 vim.keymap.set('n', '<leader>q', ':q!<CR>')
 vim.keymap.set('n', '<C-s>', ':w!<CR>')
 vim.keymap.set('n', '<C-q>', ':wqa<CR>')
@@ -13,7 +13,6 @@ vim.keymap.set('n', '<C-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>')
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.keymap.set('i', 'jj', '<Esc>', opts)
-vim.keymap.set({'n', 'i', 'v'}, '<C-t>', ':terminal ')
 
 -- move marked lines
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
